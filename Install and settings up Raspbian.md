@@ -6,7 +6,7 @@ download raspbian lite [Raspbian images](https://downloads.raspberrypi.org/raspb
 
 and balena etcher [Balena](https://www.balena.io/etcher/)
 
-If you use non-Lite version of raspberry CM, you must download and install RPIboot <https://www.raspberrypi.org/documentation/hardware/computemodule/cm-emmc-flashing.md>
+If you use non-Lite version of raspberry CM, you must download and install RPIboot [RPIboot guide](https://www.raspberrypi.org/documentation/hardware/computemodule/cm-emmc-flashing.md)
 
 After flashing your Raspberry CM you'll need to download dt-blob.bin and add it into BOOT partition. This file configures GPIO Raspberry for two cameras
 Download from this: [First url](http://wiki.stereopi.com/files/dt-blob.bin.zip)
@@ -19,6 +19,12 @@ Enable ssh-server, just
 
     sudo raspi-config
 Go to interfacing, ssh, enable.
-After this
-    
+After this do
+
+    ip a
+and remember ip addres, or go to /etc/network/interfaces and settings up eth0:
+
+    sudo nano /etc/network/interfaces
+Config for me:    
+
     sudo apt update && sudo apt upgrade
