@@ -19,12 +19,20 @@ Enable ssh-server, just
 
     sudo raspi-config
 Go to interfacing, ssh, enable.
-After this do
+After this do command and remember ip addres
 
     ip a
-and remember ip addres, or go to /etc/network/interfaces and settings up eth0:
+or go to /etc/network/interfaces and settings up eth0:
 
     sudo nano /etc/network/interfaces
-Config for me:    
+Config for me:  
 
+    auto eth0
+    iface eth0 inet static
+        address 192.168.0.50
+        netmask 255.255.255.0
+        gateway 192.168.0.1
+CTRL+O, enter,CTRL+X
+
+After
     sudo apt update && sudo apt upgrade
