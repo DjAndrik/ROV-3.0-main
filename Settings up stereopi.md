@@ -12,7 +12,7 @@ After flashing your Raspberry CM you'll need to download dt-blob.bin and add it 
 Download from this <http://wiki.stereopi.com/files/dt-blob.bin.zip>
 or this <http://stereopi.com/sites/default/files/dt-blob.dts.zip>
 
-# dirst setting up
-Keybord, monitor and... power up! When the system turns on, enter the default user. Login
+# First setting up
+Keybord, monitor and... power up! When the system turns on, enter the default user. Login - *pi*, password is *raspbian*
 
     sudo apt update && sudo apt upgrade
