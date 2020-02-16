@@ -8,6 +8,10 @@ and balena etcher <https://www.balena.io/etcher/>
 
 If you use non-Lite version of raspberry CM, you must download and install RPIboot <https://www.raspberrypi.org/documentation/hardware/computemodule/cm-emmc-flashing.md>
 
+After flashing your Raspberry CM you'll need to download dt-blob.bin. This file configures GPIO Raspberry for two cameras
+Download from this <http://wiki.stereopi.com/files/dt-blob.bin.zip>
+or this <http://stereopi.com/sites/default/files/dt-blob.dts.zip>
+
 # dirst setting up
 Keybord, monitor and... power up! When the system turns on, enter the default user. Login
 
