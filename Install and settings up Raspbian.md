@@ -17,7 +17,7 @@ Keybord, monitor and... power up! When the system turns on, enter the default us
 Enable ssh-server, just
 
     sudo raspi-config
-Go to interfacing -> ssh -> enable.
+Go to *Interfacing Options* -> *ssh* -> *enable*, also activate cameras, go to *Interdacing Options* -> *Camera* -> *Enable*.
 After this do this command and remember ip addres
 
     ip a
@@ -33,6 +33,7 @@ Config for me:
         gateway 192.168.0.1
 CTRL+O, enter,CTRL+X
 
-Reboot
+Reboot, and do this
 
-    sudo apt update && sudo apt upgrade
+    sudo rpi-update && sudo apt update && sudo apt upgrade -y
+Well done! You have fully configured and ready to work raspbian
