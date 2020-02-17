@@ -1,6 +1,3 @@
-# StereoPiSettings
-This is the guide to settings up raspbian
-
 # First of all 
 Download raspbian lite - [Raspbian images](https://downloads.raspberrypi.org/raspbian_lite_latest)
 , and balena etcher - [Balena](https://www.balena.io/etcher/)
