@@ -34,3 +34,14 @@ Reboot, and do this
 
     sudo rpi-update && sudo apt update && sudo apt upgrade -y
 Well done! You have fully configured and ready to work raspbian
+
+# Camera test
+To test camera do
+
+    raspistill -cs 0 -o 0.jpg
+    raspistill -cs 1 -o 1.jpg
+    raspistill -3d sbs -o 3d.jpg
+and you'll see pictures, if system freeze at last command, turn off  awb_mode, by adding commant to rc.local 
+  
+    sudo nano /etc/rc.local    
+    sudo vcdbg set awb_mode 0
