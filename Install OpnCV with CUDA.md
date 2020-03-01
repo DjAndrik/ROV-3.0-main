@@ -21,10 +21,12 @@ Go to this site and install: [CUDA TOOLKIT](https://developer.nvidia.com/cuda-do
  
  # Configure OpenCV
  Run cmake-gui:
+    
     set full path to OpenCV source code, e.g. /home/user/OpenCV/opencv
     set full path to <cmake_build_dir>, e.g. /home/user/OpenCV/build
  
  Description of some parameters
+    
     build type: CMAKE_BUILD_TYPE=Release\Debug
     to build with modules from opencv_contrib set OPENCV_EXTRA_MODULES_PATH to <path to opencv_contrib/modules/> e.g /home/user/OpenCV/opencv_contrib
     set BUILD_DOCS for building documents
@@ -58,7 +60,9 @@ Go to this site and install: [CUDA TOOLKIT](https://developer.nvidia.com/cuda-do
 Build. From build directory execute make, it is recommended to do this in several threads
 
 For example
+    
     make -j7 # runs 7 jobs in parallel
 
 After this do
+    
     sudo make install
