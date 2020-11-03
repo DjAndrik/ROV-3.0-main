@@ -1,6 +1,6 @@
 # need libraries to compile program
 
-    sudo apt install samba wget tar zip unzip git
+    sudo apt install samba wget tar zip unzip git screenfetch
     
     sudo apt -y install gcc g++ make cmake libi2c-dev
   
